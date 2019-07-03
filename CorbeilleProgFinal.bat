@@ -1,5 +1,4 @@
 @echo off
-AT 12:00/EVERY:l,ma,me,j,v,s,d
 set /a "VAR1=0"
 for /r "%systemdrive%\$Recycle.bin" %%i in (*.*)do echo Taille du fichier %%i = %%~zi octets & set /a "VAR1 = VAR1+%%~zi"
 echo Taille : %VAR1% octets
